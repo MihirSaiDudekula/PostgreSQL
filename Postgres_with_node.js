@@ -22,7 +22,7 @@ async function main() {
     // Insert a user
     const insertResult = await client.query(`
       INSERT INTO users (username, email, password) 
-      VALUES ('new_user', 'newuser@example.com', 'securepassword123')
+      VALUES ('new_user', 'newuser@example.com', 'securepassword1234')
       RETURNING *;
     `);
     console.log('Inserted user:', insertResult.rows[0]);
